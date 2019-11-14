@@ -82,7 +82,7 @@ class AdaptiveCardsBot extends ActivityHandler {
             {
                 const randomlySelectedCard = CARDS[2];
                 await context.sendActivity({
-                    text: 'you have selected Office App',
+                    text: 'you have selected Office 365',
                     attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
                 }); 
             }
