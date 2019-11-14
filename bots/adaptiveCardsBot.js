@@ -34,7 +34,10 @@ class AdaptiveCardsBot extends ActivityHandler {
             const membersAdded = context.activity.membersAdded;
             for (let cnt = 0; cnt < membersAdded.length; cnt++) {
                 if (membersAdded[cnt].id !== context.activity.recipient.id) {
-                    await context.sendActivity(`Welcome to Continuserve Bot  ${ membersAdded[cnt].name }. ${ WELCOME_TEXT }`);
+               
+                    await context.sendActivity(`Welcome to Continuserve Bot. ${ WELCOME_TEXT }`);
+               
+               //     await context.sendActivity(`Welcome to Continuserve Bot  ${ membersAdded[cnt].name }. ${ WELCOME_TEXT }`);
                 }
             }
 
