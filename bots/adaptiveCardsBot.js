@@ -76,7 +76,7 @@ class AdaptiveCardsBot extends ActivityHandler {
            }
            else if(context._activity.value)
            {
-            console.log(JSON.stringify(context._activity.value.CompactSelectVal));
+            console.log(JSON.stringify(context));
 
             if(context._activity.value.CompactSelectVal == 1)
             {
