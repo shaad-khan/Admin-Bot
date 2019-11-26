@@ -69,7 +69,7 @@ class AdaptiveCardsBot extends ActivityHandler {
                 const randomlySelectedCard = CARDS[3];
                 console.log(JSON.stringify(randomlySelectedCard));
                 await context.sendActivity({
-                    text: 'Please select the application for which password need to be reset?',
+                    text: 'Please enter the email body to be send !!',
                     attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
                 });
             }
