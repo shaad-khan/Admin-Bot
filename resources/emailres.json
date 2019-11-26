@@ -1,0 +1,57 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0",
+    "type": "AdaptiveCard",
+    "speak": "Create a case with System Admin Team",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Step1: Login to CS Connect http://csconnectwebapp.azurewebsites.net/",
+            "weight": "bolder","separator": true,
+            "wrap": true,
+            "isSubtle": false
+        },
+        {
+            "type": "TextBlock",
+            "text": "Step2: If your password is correct, it will send a mail with OTP",
+            "spacing": "medium",
+            "separator": true,"separator": true,
+            "wrap": true,
+            "isSubtle": false
+        },
+        {
+            "type": "TextBlock",
+            "text": "Step3: Enter the OTP ",
+            "spacing": "medium",
+            "separator": true,"separator": true,
+            "wrap": true,
+            "isSubtle": false
+        },
+        {
+            "type": "TextBlock",
+            "text": "Step4: Navigate to Issue Management >> My Issue list",
+            "spacing": "medium",
+            "separator": true,"separator": true,
+            "wrap": true,
+            "isSubtle": false
+        },
+
+     
+        {
+            "type": "TextBlock",
+            "text": "Step5: Click Report New Issue",
+            "spacing": "medium","separator": true,
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "Step5: Click Submit",
+            "weight": "bolder","separator": true,
+            "wrap": true,
+            "spacing": "medium"
+        }
+        
+       
+    ],
+    "id":"Q-111"
+}

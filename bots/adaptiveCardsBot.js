@@ -49,13 +49,13 @@ class AdaptiveCardsBot extends ActivityHandler {
         });
 
         this.onMessage(async (context, next) => {
-            //console.log(context);
+           // console.log(JSON.stringify(context._activity));
           var text;
             //const randomlySelectedCard = CARDS[Math.floor((Math.random() * CARDS.length - 1) + 1)];
             if(context._activity.text)
             {
                text=context._activity.text;
-               console.log(JSON.stringify(text));
+              // console.log(JSON.stringify(text));
             if(context._activity.text.includes('reset') || context._activity.text.includes('password'))
             {
                 const randomlySelectedCard = CARDS[0];
@@ -64,9 +64,10 @@ class AdaptiveCardsBot extends ActivityHandler {
                     attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
                 });
             }
-            if(context._activity.text.includes('Send Email'))
+            if(context._activity.text.includes('email'))
             {
                 const randomlySelectedCard = CARDS[3];
+                console.log(JSON.stringify(randomlySelectedCard));
                 await context.sendActivity({
                     text: 'Please select the application for which password need to be reset?',
                     attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
@@ -82,7 +83,7 @@ class AdaptiveCardsBot extends ActivityHandler {
                 });
             }
             
-            else
+            /*else
             {
               
                     console.log("here");
@@ -93,13 +94,135 @@ class AdaptiveCardsBot extends ActivityHandler {
                     });   
                
     
-            }
+            }*/
            }
            else if(context._activity.value)
            {
-            console.log(JSON.stringify(context));
 
-            if(context._activity.value.CompactSelectVal == 1)
+            
+            console.log(JSON.stringify(context));
+          if(context._activity.value.email)
+          {
+             var x=context._activity.value.email;
+            nodemailer.createTestAccount((err, account) => {
+                // create reusable transporter object using the default SMTP transport
+                let transporter = nodemailer.createTransport({
+                    host: 'smtp.office365.com',
+                    port: 587,
+                    secure: false, // true for 465, false for other ports
+                    auth: {
+                        user: "CS_Connect@continuserve.com", // generated ethereal user
+                        pass: "bgbfgqlgtxdknwqn" // generated ethereal password
+                    }
+                });
+        
+                // setup email data with unicode symbols
+                let mailOptions = {
+                    from: 'CS_Connect@continuserve.com', // sender address
+                    to: `shadab.k@continuserve.com`, // list of receivers
+                    subject: 'Email From CSBOT', // Subject line
+                    //text: 'Expense applied by'+ result.EmployeeName, // plain text body
+                    html: `<html>
+        <head>
+            <title>CSConnect :: Multi Factor Authentication</title>
+            <style type="text/css">
+                table.gridtable {
+                    font-family: Franklin Gothic Book,arial,sans-serif;
+                    font-size: 13px;
+                    color: #000;
+                    border-width: 1px;
+                    border-color: #337ab7;
+                    border-collapse: collapse;
+                }
+        
+                    table.gridtable th {
+                        border-width: 1px;
+                        padding: 8px;
+                        border-style: solid;
+                        border-color: #337ab7;
+                        background-color: #d9edf7;
+                    }
+        
+                    table.gridtable td {
+                        border-width: 1px;
+                        padding: 8px;
+                        border-style: solid;
+                        border-color: #337ab7;
+                        background-color: #ffffff;
+                    }
+        
+                table.gridtableWhite {
+                    font-family: Franklin Gothic Book,arial,sans-serif;
+                    font-size: 13px;
+                    color: #333333;
+                    border-width: 1px;
+                    border-color: #666666;
+                    border-collapse: collapse;
+                }
+        
+                    table.gridtableWhite th {
+                        border-width: 1px;
+                        padding: 8px;
+                        border-style: solid;
+                        border-color: #666666;
+                        background-color: #FFF;
+                    }
+        
+                    table.gridtableWhite td {
+                        border-width: 1px;
+                        padding: 8px;
+                        border-style: solid;
+                        border-color: #FFF;
+                        background-color: #ffffff;
+                    }
+        
+                .fontStyle {
+                    font-family: Franklin Gothic Book,arial,sans-serif;
+                }
+        
+                .text-success {
+                    color: #1FD41C;
+                    font-weight: bolder;
+                }
+        
+                .main-footer {
+                    background: #fff;
+                    padding: 15px;
+                    color: #444;
+                    border-top: 1px solid #d2d6de;
+                }
+            </style>
+        </head>
+        <body>
+           <h1>${x}
+        </body>
+        </html>`
+                };
+        
+                // send mail with defined transport object
+                transporter.sendMail(mailOptions, (error, info) => {
+                    if (error) {
+                      
+                      
+                        return console.log(error);
+                    }
+                    console.log('Message sent: %s', info.messageId);
+                    // Preview only available when sending through an Ethereal account
+                    console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+        
+                 
+                    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+                    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+                });
+
+          });
+          await context.sendActivity({
+            text: 'Email was sent successfully'
+           // attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
+        });   
+        }
+
+          else  if(context._activity.value.CompactSelectVal == 1)
             {
                 const randomlySelectedCard = CARDS[2];
                 randomlySelectedCard.actions[0].data.id="Q-111";
