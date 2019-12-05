@@ -73,6 +73,15 @@ class AdaptiveCardsBot extends ActivityHandler {
                     attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
                 });
             }
+            if(context._activity.text.includes('options'))
+            {
+                const randomlySelectedCard = CARDS[1];
+                console.log(JSON.stringify(randomlySelectedCard));
+                await context.sendActivity({
+                    text: 'option test',
+                    attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
+                });
+            }
             if(context._activity.text.includes('outlook loading'))
             {
                 const randomlySelectedCard = CARDS[2];
