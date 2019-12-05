@@ -3,45 +3,28 @@
   "body": [
       {
           "type": "TextBlock",
-          "text": "option test",
-          "weight": "bolder","separator": true,
-          "wrap": true,
-          "isSubtle": false
-      }
-          ]
-      
-  ,
-  "actions": [
-      {
-          "type": "Action.ShowCard",
-          "title": "Set due date",
-          "card": {
-              "type": "AdaptiveCard",
-              "body": [
-                  {
-                      "type": "Input.Date",
-                      "id": "dueDate"
-                  },
-                  {
-                      "type": "Input.Text",
-                      "id": "comment",
-                      "placeholder": "Add a comment",
-                      "isMultiline": true
-                  }
-              ],
-              "actions": [
-                  {
-                      "type": "Action.Submit",
-                      "title": "OK"
-                  }
-              ],
-              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
-          }
+          "text": "options",
+          "weight": "Bolder",
+          "separator": true,
+          "wrap": true
       },
       {
-          "type": "Action.OpenUrl",
-          "title": "View",
-          "url": "{viewUrl}"
+          "type": "ActionSet",
+          "actions": [
+              {
+                  "type": "Action.Submit",
+                  "title": "option 1"
+              }
+          ]
+      },
+      {
+          "type": "ActionSet",
+          "actions": [
+              {
+                  "type": "Action.Submit",
+                  "title": "option 2"
+              }
+          ]
       }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
