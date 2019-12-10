@@ -86,7 +86,7 @@ class AdaptiveCardsBot extends ActivityHandler {
                 //const randomlySelectedCard = CARDS[5];
                 //console.log(JSON.stringify(randomlySelectedCard));
                 await context.sendActivity({
-                    text: 'option test',
+                    text: '',
                     attachments: [CardFactory.adaptiveCard(require('../resources/1003.json'))]
                 });
             }
