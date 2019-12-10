@@ -121,7 +121,7 @@ class AdaptiveCardsBot extends ActivityHandler {
 await context.sendActivity({
                     text: '',
                     
-                    attachments: [CardFactory.adaptiveCard(require("../resources/"+context._activity.value+".json"))]
+                    attachments: [CardFactory.adaptiveCard(require(`../resources/1005.json`))]
                 });
                 if(context._activity.value=="1008"||context._activity.value=="1009"||context._activity.value=="1012")
 
