@@ -57,7 +57,7 @@ class AdaptiveCardsBot extends ActivityHandler {
         });
 
         this.onMessage(async (context, next) => {
-           // console.log(JSON.stringify(context._activity));
+           console.log(JSON.stringify(context._activity));
           var text;
             //const randomlySelectedCard = CARDS[Math.floor((Math.random() * CARDS.length - 1) + 1)];
             if(context._activity.text)
@@ -84,7 +84,7 @@ class AdaptiveCardsBot extends ActivityHandler {
             if(context._activity.text.includes('hi'))
             {
                 //const randomlySelectedCard = CARDS[5];
-                //console.log(JSON.stringify(randomlySelectedCard));
+                console.log(JSON.stringify(context._activity.text));
                 await context.sendActivity({
                     text: '',
                     attachments: [CardFactory.adaptiveCard(require('../resources/1003.json'))]
