@@ -4,29 +4,33 @@
 const { ActivityHandler, CardFactory } = require('botbuilder');
 
 // Import AdaptiveCard content.
-const cake = require('../resources/cake.json');
+//const cake = require('../resources/cake.json');
 const fs=require('fs');
-const nodemailer = require('nodemailer');
-const choco = require('../resources/choco.json');
-const ImageGalleryCard = require('../resources/ImageGalleryCard.json');
-const LargeWeatherCard = require('../resources/LargeWeatherCard.json');
-const RestaurantCard = require('../resources/RestaurantCard.json');
-const SolitaireCard = require('../resources/SolitaireCard.json');
-const selection = require('../resources/selection.json');
-const sendemail = require('../resources/sendemail.json');
-const createcase = require('../resources/createcase.json');
+//const nodemailer = require('nodemailer');
+//const choco = require('../resources/choco.json');
+//const ImageGalleryCard = require('../resources/ImageGalleryCard.json');
+//const LargeWeatherCard = require('../resources/LargeWeatherCard.json');
+//const RestaurantCard = require('../resources/RestaurantCard.json');
+//const SolitaireCard = require('../resources/SolitaireCard.json');
+//const selection = require('../resources/selection.json');
+//const sendemail = require('../resources/sendemail.json');
+const d_1003 = require('../resources/1003.json');
+const d_1005 = require('../resources/1005.json');
+//const createcase = require('../resources/createcase.json');
 // Create array of AdaptiveCard content, this will be used to send a random card to the user.
-const CARDS = [
+/*const CARDS = [
     cake,
     choco,
     selection,
     sendemail,
     createcase,
+    d_1003,
+    d_1005,
     ImageGalleryCard,
     LargeWeatherCard,
     RestaurantCard,
     SolitaireCard
-];
+];*/
 
 const WELCOME_TEXT = 'This bot will try to answer all your system admin related queries...!!';
 
@@ -38,8 +42,12 @@ class AdaptiveCardsBot extends ActivityHandler {
             for (let cnt = 0; cnt < membersAdded.length; cnt++) {
                 if (membersAdded[cnt].id !== context.activity.recipient.id) {
                
-                    await context.sendActivity(`Welcome to Continuserve Bot. ${ WELCOME_TEXT }`);
-               
+                   // await context.sendActivity(`Welcome to Continuserve Bot. ${ WELCOME_TEXT }`);
+                  // const randomlySelectedCard = CARDS[0];
+                   await context.sendActivity({
+                       text: '',
+                       attachments: [CardFactory.adaptiveCard(require('../resources/1003.json'))]
+                   });
                //     await context.sendActivity(`Welcome to Continuserve Bot  ${ membersAdded[cnt].name }. ${ WELCOME_TEXT }`);
                 }
             }
@@ -75,13 +83,14 @@ class AdaptiveCardsBot extends ActivityHandler {
             }
             if(context._activity.text.includes('options'))
             {
-                const randomlySelectedCard = CARDS[1];
-                console.log(JSON.stringify(randomlySelectedCard));
+                //const randomlySelectedCard = CARDS[5];
+                //console.log(JSON.stringify(randomlySelectedCard));
                 await context.sendActivity({
                     text: 'option test',
-                    attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
+                    attachments: [CardFactory.adaptiveCard(require('../resources/1003.json'))]
                 });
             }
+            
             if(context._activity.text.includes('outlook loading'))
             {
                 const randomlySelectedCard = CARDS[2];
@@ -107,7 +116,33 @@ class AdaptiveCardsBot extends ActivityHandler {
            }
            else if(context._activity.value)
            {
+            console.log(JSON.stringify(context._activity.value.MoreQuery));
 
+await context.sendActivity({
+                    text: '',
+                    
+                    attachments: [CardFactory.adaptiveCard(require(`../resources/${context._activity.value}.json`))]
+                });
+                if(context._activity.value=="1008"||context._activity.value=="1009"||context._activity.value=="1012")
+
+{
+    await context.sendActivity({
+    text: '',
+    
+    attachments: [CardFactory.adaptiveCard(require(`../resources/1001.json`))]
+});
+
+}                /* for(var i=0;i<CARDS.length;i++)
+            {
+                console.log(CARDS[i]+"d_"+context._activity.value);
+                if(CARDS[i].includes(context._activity.value))
+                {
+                    const randomlySelectedCard = CARDS[i];
+                
+            } 
+            }*/
+              
+        
             
             console.log(JSON.stringify(context));
           if(context._activity.value.email)

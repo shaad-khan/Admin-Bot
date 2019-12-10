@@ -1,0 +1,14 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Follow this link: https://passwordreset.microsoftonline.com/",
+            "id": "Follow this link: https://passwordreset.microsoftonline.com/",
+			"data":1017
+
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

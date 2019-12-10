@@ -1,0 +1,65 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "What do you want to do?",
+            "separator": true,
+            "wrap": true,
+            "weight": "Bolder",
+            "id": "What do you want to do?"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Create a case with IT team to get it resolved",
+                    "id": "Create a case with IT team to get it resolved",
+					"data":1008
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Give me some idea. I will try to do it myself first",
+                    "id": "Give me some idea. I will try to do it myself first",
+					"data":1009
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Notify IT Team about the issue. I have a workaround now",
+                    "id": "Notify IT Team about the issue. I have a workaround now",
+					"data":1001
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "I don’t want any help right now",
+                    "id": "I don’t want any help right now",
+					"data":1004
+                }
+            ],
+            "horizontalAlignment": "Left"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

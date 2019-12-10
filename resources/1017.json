@@ -1,0 +1,32 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "The above steps did not work for me.  I want to create a request with IT Team.",
+                    "id": "The above steps did not work for me.  I want to create a request with IT Team.",
+					"data":1008
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "I am all set. ",
+                    "id": "I am all set. ",
+						"data":1001
+                }
+            ],
+            "horizontalAlignment": "Left"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

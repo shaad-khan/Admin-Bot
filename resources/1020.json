@@ -1,0 +1,14 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Try starting outlook in safe mode\nStep 1: Click on start and type Run\nStep 2: Select Run from the list\nStep 3: Type \"outlook.exe /safe\" (without the quotes)\t",
+            "id": "Try starting outlook in safe mode Step 1: Click on start and type Run Step 2: Select Run from the list Step 3: Type \"outlook.exe /safe\" (without the quotes)\t"
+        ,"data":1017
+
+		}
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

@@ -1,0 +1,80 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Do you want to do any of the following",
+            "separator": true,
+            "wrap": true,
+            "weight": "Bolder",
+            "id": "Do you want to do any of the following"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Reset Password",
+                    "id": "Reset Password",
+					"data":1014
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Outlook Emails",
+                    "id": "Outlook Emails",
+					"data":1018
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": " Excel/Word/Powerpoint/Teams",
+                    "id": " Excel/Word/Powerpoint/Teams",
+					"data":1024
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Sharepoint related",
+                    "id": "Sharepoint related",
+					"data":1025
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "No, I need help with another topic",
+                    "id": "No, I need help with another topic",
+					"data":1003
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

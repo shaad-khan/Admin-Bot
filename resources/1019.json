@@ -1,0 +1,13 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Try doing these steps to remove and add the profile.\nStep 1: Close Outlook\nStep 2: Click on start in your system and type mail(Microsoft Outlook 2016) and select.\nStep 3: Click Profile and Remove the profile and open outlook.\nStep 4: Restart Outlook\nStep 5: Add the related accounts again.",
+            "id": "Try doing these steps to remove and add the profile. Step 1: Close Outlook Step 2: Click on start in your system and type mail(Microsoft Outlook 2016) and select. Step 3: Click Profile and Remove the profile and open outlook. Step 4: Restart Outlook Step 5: Add the related accounts again."
+        ,"data":1017
+		}
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

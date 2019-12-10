@@ -1,0 +1,13 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Do the following steps to add a new account\nStep 1: Open Outlook\nStep 2: Click file >> Add account\nStep 3: Enter the Mail id and password.\nStep 4: Account will be configured.\nStep 5: Click on done.",
+            "id": "Do the following steps to add a new account Step 1: Open Outlook Step 2: Click file >> Add account Step 3: Enter the Mail id and password. Step 4: Account will be configured. Step 5: Click on done."
+        ,"data":1017
+		}
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

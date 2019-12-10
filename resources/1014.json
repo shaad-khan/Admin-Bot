@@ -1,0 +1,41 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "I want to:",
+            "separator": true,
+            "wrap": true,
+            "weight": "Bolder",
+            "id": "I want to:"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Reset my Office 365 password",
+                    "id": "Reset my Office 365 password",
+					"data":1016
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Reset my Office Apps password",
+                    "id": "Reset my Office Apps password",
+					"data":1015
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

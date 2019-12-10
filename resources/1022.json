@@ -1,0 +1,13 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Step 1: Check whether the mail id and password is working.\nStep 2: If you changed the password then we need to delete it in credentials manager.\nStep 3: Click on start and type \"windows credentials\"\nStep 4: Select Credentials Manager and remove the appropriate password from the Outlook entry.\nStep 5: Open Outlook and enter new password there.",
+            "id": "Step 1: Check whether the mail id and password is working. Step 2: If you changed the password then we need to delete it in credentials manager. Step 3: Click on start and type \"windows credentials\" Step 4: Select Credentials Manager and remove the appropriate password from the Outlook entry. Step 5: Open Outlook and enter new password there."
+        ,"data":1017
+		}
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

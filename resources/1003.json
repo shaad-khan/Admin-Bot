@@ -1,0 +1,81 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Please choose a topic that you need assistance with:",
+            "separator": true,
+            "wrap": true,
+            "weight": "Bolder",
+            "id": "Please choose a topic that you need assistance with:"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "HR related",
+                    "id": "HR related"
+                    
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "IT related ",
+                    "id": "IT related",
+                    "data": 1005
+                 
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Admin related",
+                    "id": "Admin related",
+                    "data": 1002
+
+                   
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Others",
+                    "id": "Others",
+                    "data": 1010
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": " I will check later. Bye!",
+                    "id": " I will check later. Bye!",
+                    "data":  1004
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

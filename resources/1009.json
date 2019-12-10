@@ -1,0 +1,16 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Here are some checks that you can do:\n\n1) Restarting the system will solve most of the system related issues. So try restarting.\n2) Try the common troubleshooting steps. Follow the instructions provided in this link:"
+        },
+        {
+            "type": "TextBlock",
+            "text": "<Link to be Added>",
+            "id": "<Link to be Added>"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

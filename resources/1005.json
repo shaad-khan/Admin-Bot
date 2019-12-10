@@ -1,0 +1,77 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Were you looking for any of the following IT related queries:",
+            "separator": true,
+            "wrap": true,
+            "weight": "Bolder",
+            "id": "Were you looking for any of the following IT related queries:"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Office 365 Apps - Outlook Email/Sharepoint/Teams/Excel/Word etc",
+                    "id": "Office 365 Apps - Outlook Email/Sharepoint/Teams/Excel/Word etc",
+                    "data":1006
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Desktop/Laptop related",
+                    "id": "Desktop/Laptop related",
+                     "data":1007
+
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Software Installation",
+                    "id": "Software Installation",
+ 	 "data":1011
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Other issues",
+                    "id": "Other issues",
+ "data":1010
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "No, I need help with another topic",
+                    "id": "No, I need help with another topic",
+"data":1003
+                }
+            ],
+            "horizontalAlignment": "Left"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

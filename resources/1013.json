@@ -1,0 +1,28 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Please mention the software(s) that needs to be installed",
+            "id": "Please mention the software(s) that needs to be installed"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "Input.Text",
+                    "placeholder": "Type your query",
+                    "inlineAction": {
+                        "type": "Action.Submit",
+                        "title": "Submit"
+                    },
+                    "id": "MoreQuery",
+					"data":1023
+
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}
