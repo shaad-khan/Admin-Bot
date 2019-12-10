@@ -64,7 +64,7 @@ class AdaptiveCardsBot extends ActivityHandler {
             {
                text=context._activity.text;
               // console.log(JSON.stringify(text));
-            if(context._activity.text.includes('reset') || context._activity.text.includes('password'))
+            /*if(context._activity.text.includes('reset') || context._activity.text.includes('password'))
             {
                 const randomlySelectedCard = CARDS[0];
                 await context.sendActivity({
@@ -80,7 +80,7 @@ class AdaptiveCardsBot extends ActivityHandler {
                     text: 'Please enter the email body to be send !!',
                     attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
                 });
-            }
+            }*/
             if(context._activity.text.includes('hi'))
             {
                 //const randomlySelectedCard = CARDS[5];
@@ -91,7 +91,7 @@ class AdaptiveCardsBot extends ActivityHandler {
                 });
             }
             
-            if(context._activity.text.includes('outlook loading'))
+           /* if(context._activity.text.includes('outlook loading'))
             {
                 const randomlySelectedCard = CARDS[2];
                 randomlySelectedCard.actions[0].data.id="Q-112";
@@ -116,7 +116,7 @@ class AdaptiveCardsBot extends ActivityHandler {
            }
            else if(context._activity.value)
            {
-         console.log(JSON.stringify(context._activity.value.MoreQuery);
+       //  console.log(JSON.stringify(context._activity.value.MoreQuery);
 
 await context.sendActivity({
                     text: '',
