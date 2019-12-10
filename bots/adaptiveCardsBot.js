@@ -116,12 +116,12 @@ class AdaptiveCardsBot extends ActivityHandler {
            }
            else if(context._activity.value)
            {
-       //  console.log(JSON.stringify(context._activity.value.MoreQuery);
+       console.log(JSON.stringify(context._activity.value));
 
 await context.sendActivity({
                     text: '',
                     
-                    attachments: [CardFactory.adaptiveCard(require(`../resources/${context._activity.value}.json`))]
+                    attachments: [CardFactory.adaptiveCard(require("../resources/"+context._activity.value+".json"))]
                 });
                 if(context._activity.value=="1008"||context._activity.value=="1009"||context._activity.value=="1012")
 
