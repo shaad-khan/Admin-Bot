@@ -116,7 +116,7 @@ class AdaptiveCardsBot extends ActivityHandler {
            }
            else if(context._activity.value)
            {
-         //   console.log(JSON.stringify(context._activity.value.MoreQuery));
+         console.log(JSON.stringify(context._activity.value.MoreQuery);
 
 await context.sendActivity({
                     text: '',
