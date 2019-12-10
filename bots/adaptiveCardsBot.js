@@ -81,7 +81,7 @@ class AdaptiveCardsBot extends ActivityHandler {
                     attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
                 });
             }
-            if(context._activity.text.includes('options'))
+            if(context._activity.text.includes('hi'))
             {
                 //const randomlySelectedCard = CARDS[5];
                 //console.log(JSON.stringify(randomlySelectedCard));
