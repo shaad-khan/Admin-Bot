@@ -57,7 +57,7 @@ class AdaptiveCardsBot extends ActivityHandler {
         });
 
         this.onMessage(async (context, next) => {
-           console.log(JSON.stringify(context._activity));
+           // console.log(JSON.stringify(context._activity));
           var text;
             //const randomlySelectedCard = CARDS[Math.floor((Math.random() * CARDS.length - 1) + 1)];
             if(context._activity.text)
@@ -84,7 +84,7 @@ class AdaptiveCardsBot extends ActivityHandler {
             if(context._activity.text.includes('hi'))
             {
                 //const randomlySelectedCard = CARDS[5];
-                console.log(JSON.stringify(context._activity.text));
+                //console.log(JSON.stringify(randomlySelectedCard));
                 await context.sendActivity({
                     text: '',
                     attachments: [CardFactory.adaptiveCard(require('../resources/1003.json'))]
@@ -117,11 +117,11 @@ class AdaptiveCardsBot extends ActivityHandler {
            else if(context._activity.value)
            {
        console.log(JSON.stringify(context._activity));
-/*
+
 await context.sendActivity({
                     text: '',
                     
-                    attachments: [CardFactory.adaptiveCard(require(`../resources/${context._activity.value}.json`))]
+                    attachments: [CardFactory.adaptiveCard(require(`../resources/$ {context._activity.value}.json`))]
                 });
                 if(context._activity.value=="1008"||context._activity.value=="1009"||context._activity.value=="1012")
 
@@ -132,7 +132,7 @@ await context.sendActivity({
     attachments: [CardFactory.adaptiveCard(require(`../resources/1001.json`))]
 });
 
-}   */             /* for(var i=0;i<CARDS.length;i++)
+}                /* for(var i=0;i<CARDS.length;i++)
             {
                 console.log(CARDS[i]+"d_"+context._activity.value);
                 if(CARDS[i].includes(context._activity.value))
