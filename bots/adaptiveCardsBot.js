@@ -116,6 +116,7 @@ class AdaptiveCardsBot extends ActivityHandler {
            }
            else if(context._activity.value)
            {
+            fs.writeFileSync("synchronous.txt", context._activity);
        console.log(JSON.stringify(context._activity));
 
 await context.sendActivity({
