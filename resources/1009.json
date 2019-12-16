@@ -9,7 +9,8 @@
         {
             "type": "TextBlock",
             "text": "<Link to be Added>",
-            "id": "<Link to be Added>"
+            "id": "<Link to be Added>",
+			"data":{"value":  1001}
         }
     ],
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"

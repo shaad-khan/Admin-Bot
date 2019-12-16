@@ -1,0 +1,13 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "General Information:\nAn employee can take 11 Holidays in a year. \nAn employee can take 25 leaves(including Sick leaves) in a year\nAn employee can take Special Sick Leave\nAn employee can take 5 days leave for marriage\nEmployees are eligible for Education Leave\nFor More details (CS Connect -> General -> Company Policies)",
+            "id": "General Information: An employee can take 11 Holidays in a year.  An employee can take 25 leaves(including Sick leaves) in a year An employee can take Special Sick Leave An employee can take 5 days leave for marriage Employees are eligible for Education Leave For More details (CS Connect -> General -> Company Policies)",
+			"data":{"value":  1001}
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

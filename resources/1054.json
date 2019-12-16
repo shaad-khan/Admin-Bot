@@ -4,8 +4,8 @@
     "body": [
         {
             "type": "TextBlock",
-            "text": "An Approval request has been send to IT Team. You will hear back from them shortly",
-            "id": "An Approval request has been send to IT Team. You will hear back from them shortly",
+            "text": "HR has been notified ",
+            "id": "HR has been notified ",
 			"data":{"value":  1001}
         }
     ],

@@ -1,0 +1,13 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Check if you are signed in\nStep 1: Click on sign in and enter your Continuserve credentials.\nStep 2: If it does not login, then sign out and try to sign in again.",
+            "id": "Check if you are signed in Step 1: Click on sign in and enter your Continuserve credentials. Step 2: If it does not login, then sign out and try to sign in again.",
+			"data":{"value":  1017}
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

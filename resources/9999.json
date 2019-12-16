@@ -3,21 +3,19 @@
     "body": [
         {
             "type": "TextBlock",
-            "text": "Were you looking for any of the following IT related queries:",
+            "text": "I am sorry, My knowledge is limited. I did not understand your query. \nDo you need help in any of the following area?",
             "separator": true,
             "wrap": true,
-            "weight": "Bolder",
-            "id": "Were you looking for any of the following IT related queries:"
+            "weight": "Bolder"
         },
         {
             "type": "ActionSet",
             "actions": [
                 {
                     "type": "Action.Submit",
-                    "title": "Office 365 Apps - Outlook Email/Sharepoint/Teams/Excel/Word etc",
-                    "id": "Office 365 Apps - Outlook Email/Sharepoint/Teams/Excel/Word etc",
-                    "data":{"value": 1006}
-
+                    "title": "HR related",
+                    "id": "HR related"
+					
                 }
             ],
             "horizontalAlignment": "Left"
@@ -27,10 +25,9 @@
             "actions": [
                 {
                     "type": "Action.Submit",
-                    "title": "Desktop/Laptop related",
-                    "id": "Desktop/Laptop related",
-                     "data":{"value": 1007}
-
+                    "title": "IT related ",
+                    "id": "IT related",
+					"data":{"value":  1005}
                 }
             ],
             "horizontalAlignment": "Left"
@@ -40,9 +37,9 @@
             "actions": [
                 {
                     "type": "Action.Submit",
-                    "title": "Software Installation",
-                    "id": "Software Installation",
- 	 "data":{"value": 1011}
+                    "title": "Admin related",
+                    "id": "Admin related",
+					"data":{"value":  1002}
                 }
             ],
             "horizontalAlignment": "Left"
@@ -52,9 +49,9 @@
             "actions": [
                 {
                     "type": "Action.Submit",
-                    "title": "Other issues",
-                    "id": "Other issues",
- "data":{"value": 1010}
+                    "title": "Others",
+                    "id": "Others",
+					"data":{"value":  1010}
                 }
             ],
             "horizontalAlignment": "Left"
@@ -64,9 +61,9 @@
             "actions": [
                 {
                     "type": "Action.Submit",
-                    "title": "No, I need help with another topic",
-                    "id": "No, I need help with another topic",
-"data":{"value": 1003}
+                    "title": "None of the above. I will check later. Bye!",
+                    "id": "None of the above",
+					"data":{"value":  1004}
                 }
             ],
             "horizontalAlignment": "Left"

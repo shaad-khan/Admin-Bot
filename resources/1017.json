@@ -21,7 +21,8 @@
                     "type": "Action.Submit",
                     "title": "I am all set. ",
                     "id": "I am all set. ",
-						"data":1001
+					"data":{"value": 1001}
+				
                 }
             ],
             "horizontalAlignment": "Left"

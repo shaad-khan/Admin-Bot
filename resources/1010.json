@@ -1,0 +1,26 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Let me know more about the issue/query."
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "Input.Text",
+                    "placeholder": "Type your query",
+                    "inlineAction": {
+                        "type": "Action.Submit",
+                        "title": "Submit"
+                    },
+                    "id": "MoreQuery",
+					"data":{"value":  1002}
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

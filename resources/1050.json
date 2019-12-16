@@ -1,0 +1,111 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Choose a topic",
+            "separator": true,
+            "wrap": true,
+            "weight": "Bolder",
+            "id": "Choose a topic"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Payroll related",
+                    "id": "Payroll related",
+					"data":{"value":  1051}
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Employee PF",
+                    "id": "Employee PF",
+					"data":{"value":  1051}
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Leave (Vacation/Holidays)",
+                    "id": "Leave (Vacation/Holidays)",
+					"data":{"value":  1051}
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "CS Connect",
+                    "id": "CS Connect",
+					"data":{"value":  1051}
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Income Tax(IT) related",
+                    "id": "Income Tax(IT) related",
+					"data":{"value":  1051}
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Insurance ",
+                    "id": "Insurance ",
+					"data":{"value":  1051}
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Others",
+                    "id": "Others",
+					"data":{"value":  1051}
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Report an issue",
+                    "id": "Report an issue",
+					"data":{"value":  1051}
+                }
+            ],
+            "horizontalAlignment": "Left"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

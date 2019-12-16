@@ -1,0 +1,13 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Check with your manager to make sure you have access to Sharepoint.\nIf not, you can request for access from the notification page",
+            "id": "Check with your manager to make sure you have access to Sharepoint. If not, you can request for access from the notification page",
+			"data":{"value":  1017}
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

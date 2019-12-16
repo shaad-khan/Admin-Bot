@@ -1,0 +1,51 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Choose a relevant topic",
+            "separator": true,
+            "wrap": true,
+            "weight": "Bolder",
+            "id": "Choose a relevant topic"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Leave General Information",
+                    "id": "Leave General Information",
+					"data":{"value":  1052}
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "How do I cancel my leave once approved?",
+                    "id": "How do I cancel my leave once approved?",
+					"data":{"value":  1053}
+                }
+            ],
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "I need to change my Holiday Plan",
+                    "id": "I need to change my Holiday Plan",
+					"data":{"value":  1053}
+                }
+            ],
+            "horizontalAlignment": "Left"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

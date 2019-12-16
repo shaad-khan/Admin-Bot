@@ -1,0 +1,27 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "You need to email HR. Please enter the details and submit",
+            "id": "You need to email HR. Please enter the details and submit"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "Input.Text",
+                    "placeholder": "Type your query",
+                    "inlineAction": {
+                        "type": "Action.Submit",
+                        "title": "Submit and Notify HR"
+                    },
+                    "id": "MoreQuery",
+					"data":{"value":  1054}
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}
