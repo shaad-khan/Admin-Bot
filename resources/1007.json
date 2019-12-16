@@ -16,7 +16,7 @@
                     "type": "Action.Submit",
                     "title": "Create a case with IT team to get it resolved",
                     "id": "Create a case with IT team to get it resolved",
-					"data":1008
+					"data":{"value": 1008}
 
                 }
             ],
@@ -29,7 +29,7 @@
                     "type": "Action.Submit",
                     "title": "Give me some idea. I will try to do it myself first",
                     "id": "Give me some idea. I will try to do it myself first",
-					"data":1009
+					"data":{"value": 1009}
                 }
             ],
             "horizontalAlignment": "Left"
@@ -41,7 +41,7 @@
                     "type": "Action.Submit",
                     "title": "Notify IT Team about the issue. I have a workaround now",
                     "id": "Notify IT Team about the issue. I have a workaround now",
-					"data":1001
+					"data":{"value": 1001}
 
                 }
             ],
@@ -52,9 +52,9 @@
             "actions": [
                 {
                     "type": "Action.Submit",
-                    "title": "I don’t want any help right now",
-                    "id": "I don’t want any help right now",
-					"data":1004
+                    "title": "I don't want any help right now",
+                    "id": "I don't want any help right now",
+					"data":{"value": 1004}
                 }
             ],
             "horizontalAlignment": "Left"

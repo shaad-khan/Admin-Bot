@@ -16,7 +16,7 @@
                     "type": "Action.Submit",
                     "title": "My Outlook is not starting",
                     "id": "My Outlook is not starting",
-					"data":1020
+					"data":{"value": 1020}
 
                 }
             ],
@@ -29,7 +29,7 @@
                     "type": "Action.Submit",
                     "title": "I want to add a new mail box account to Outlook",
                     "id": "I want to add a new mail box account to Outlook",
-					"data":1021
+					"data":{"value": 1021}
 
                 }
             ],
@@ -42,7 +42,7 @@
                     "type": "Action.Submit",
                     "title": "My mails are not updating",
                     "id": "My mails are not updating",
-					"data":1022
+					"data":{"value": 1022}
 
                 }
             ],
@@ -55,7 +55,7 @@
                     "type": "Action.Submit",
                     "title": "I have Outlook profile issue",
                     "id": "I have Outlook profile issue",
-					"data":1019
+					"data":{"value": 1019}
 
                 }
             ],
@@ -68,7 +68,7 @@
                     "type": "Action.Submit",
                     "title": "Other Outlook issues. Create a case with IT Team",
                     "id": "Other Outlook issues. Create a case with IT Team",
-					"data":1008
+					"data":{"value": 1008}
 
                 }
             ],

@@ -16,7 +16,7 @@
                     "type": "Action.Submit",
                     "title": "Reset Password",
                     "id": "Reset Password",
-					"data":1014
+					"data":{"value": 1014}
 
                 }
             ],
@@ -29,7 +29,7 @@
                     "type": "Action.Submit",
                     "title": "Outlook Emails",
                     "id": "Outlook Emails",
-					"data":1018
+					"data":{"value": 1018}
 
                 }
             ],
@@ -42,7 +42,7 @@
                     "type": "Action.Submit",
                     "title": " Excel/Word/Powerpoint/Teams",
                     "id": " Excel/Word/Powerpoint/Teams",
-					"data":1024
+					"data":{"value": 1024}
 
                 }
             ],
@@ -55,7 +55,7 @@
                     "type": "Action.Submit",
                     "title": "Sharepoint related",
                     "id": "Sharepoint related",
-					"data":1025
+					"data":{"value": 1025}
 
                 }
             ],
@@ -68,7 +68,7 @@
                     "type": "Action.Submit",
                     "title": "No, I need help with another topic",
                     "id": "No, I need help with another topic",
-					"data":1003
+					"data":{"value": 1003}
 
                 }
             ],

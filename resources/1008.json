@@ -10,7 +10,7 @@
             "type": "TextBlock",
             "text": "**Step1:** Login to CS Connect. [Link](http://csconnectwebapp.azurewebsites.net/)\n\n**Step2:** If your password is correct, it will send a mail with OTP\n\n**Step3:** Enter the OTP and then Navigate to Issue Management >> My Issue list\n\n**Step4:** Click Report New Issue\n\n**Step5:** Click \"Submit\"",
 			
-			"data":1001
+			"data":{"value": 1001}
 
         }
     ],

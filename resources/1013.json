@@ -18,7 +18,7 @@
                         "title": "Submit"
                     },
                     "id": "MoreQuery",
-					"data":1023
+					"data":{"value": 1023}
 
                 }
             ]

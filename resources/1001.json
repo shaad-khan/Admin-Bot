@@ -15,7 +15,7 @@
                     "type": "Action.Submit",
                     "title": "Yes",
                     "id": "Yes",
-					"data":1003
+					"data":{"value": 1003}
 
                 }
             ],
@@ -28,7 +28,7 @@
                     "type": "Action.Submit",
                     "title": "No",
                     "id": "No",
-					"data":1004
+					"data":{"value": 1004}
                 }
             ],
             "horizontalAlignment": "Left"

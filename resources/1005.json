@@ -16,7 +16,7 @@
                     "type": "Action.Submit",
                     "title": "Office 365 Apps - Outlook Email/Sharepoint/Teams/Excel/Word etc",
                     "id": "Office 365 Apps - Outlook Email/Sharepoint/Teams/Excel/Word etc",
-                    "data":1006
+                    "data":{"value": 1006}
 
                 }
             ],
@@ -29,7 +29,7 @@
                     "type": "Action.Submit",
                     "title": "Desktop/Laptop related",
                     "id": "Desktop/Laptop related",
-                     "data":1007
+                     "data":{"value": 1007}
 
                 }
             ],

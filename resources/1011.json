@@ -15,7 +15,7 @@
                 {
                     "type": "Action.Submit",
                     "title": "I have admin privilege. I wanted to install the software myself",
-                    "id": "I have admin privilege. I wanted to install the software myself","data":1012
+                    "id": "I have admin privilege. I wanted to install the software myself","data":{"value": 1012}
 
                 }
             ],
@@ -26,8 +26,8 @@
             "actions": [
                 {
                     "type": "Action.Submit",
-                    "title": "I don’t have access to install software. I need help",
-                    "id": "I don’t have access to install software. I need help","data":1013
+                    "title": "I don't have access to install software. I need help",
+                    "id": "I don't have access to install software. I need help","data":{"value": 1013}
                 }
             ],
             "horizontalAlignment": "Left"

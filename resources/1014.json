@@ -16,7 +16,7 @@
                     "type": "Action.Submit",
                     "title": "Reset my Office 365 password",
                     "id": "Reset my Office 365 password",
-					"data":1016
+					"data":{"value": 1016}
 
                 }
             ],
@@ -29,7 +29,7 @@
                     "type": "Action.Submit",
                     "title": "Reset my Office Apps password",
                     "id": "Reset my Office Apps password",
-					"data":1015
+					"data":{"value": 1015}
 
                 }
             ],

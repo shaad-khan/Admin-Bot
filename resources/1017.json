@@ -8,7 +8,7 @@
                     "type": "Action.Submit",
                     "title": "The above steps did not work for me.  I want to create a request with IT Team.",
                     "id": "The above steps did not work for me.  I want to create a request with IT Team.",
-					"data":1008
+					"data":{"value": 1008}
 
                 }
             ],
