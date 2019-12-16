@@ -29,7 +29,8 @@
                     "type": "Action.Submit",
                     "title": "IT related ",
                     "id": "IT related",
-                    "data": 1005
+                    "data": 1005,
+                    "value": 1005
                  
                 }
             ],
