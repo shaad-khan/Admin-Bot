@@ -58,7 +58,7 @@ class AdaptiveCardsBot extends ActivityHandler {
 
         this.onMessage(async (context, next) => {
            // console.log(JSON.stringify(context._activity));
-           fs.writeFileSync("synchronous.txt", context._activity);
+           fs.writeFileSync("synchronous.txt", JSON.stringify(context._activity));
           var text;
             //const randomlySelectedCard = CARDS[Math.floor((Math.random() * CARDS.length - 1) + 1)];
             if(context._activity.text)
